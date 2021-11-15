@@ -4,30 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
  
-namespace Sample703
+namespace Sample702
 {
-       class Person2
-       {
-           //  情報の設定
-           public void SetAgeAndName(string name, int age)
-           {
-               Name = name;
-               Age = age;
-           }
-           //  情報の表示（メソッド）
-           public void ShowAgeAndName()
-           {
-               Console.WriteLine("名前：{0} 年齢：{1}", Name, Age);
-           }
-           //  情報の設定
-           public string Name
-           {
-               private set; get;
-           }
-           //  情報の設定
-           public int Age
-           {
-               set; get;
-           }
-       }
-}t
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Access a = new Access();
+            //a.Data1 = 1;
+            a.Data2 = 2;
+            a.ShowDatas();
+            Console.WriteLine("a.data1 = {0}", a.Data1);
+            //Console.WriteLine("a.data2 = {0}", a.Data2);
+        }
+    }
+}
